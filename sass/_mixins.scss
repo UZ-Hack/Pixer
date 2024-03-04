@@ -1,0 +1,46 @@
+@mixin content-title {
+    font-weight: 700;
+    line-height: 130%;
+}
+
+@mixin content-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin for-nav {
+    @media screen and (max-width: 810px) {
+        @content;
+    }
+}
+
+@mixin for-hero {
+    @media screen and (max-width: 770px) {
+        @content;
+    }
+}
+
+@mixin for-services {
+    @media screen and (max-width: 760px) {
+        @content;
+    }
+}
+
+@mixin for-services-links {
+    @media screen and (max-width: 405px) {
+        @content;
+    }
+}
+
+@mixin for-works {
+    @media screen and (max-width: 510px) {
+        @content;
+    }
+}
+
+@mixin for-footer {
+    @media screen and (max-width: 677px) {
+        @content;
+    }
+}

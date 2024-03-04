@@ -1,0 +1,48 @@
+#order {
+    margin-top: 50px;
+    padding: 56px 0;
+    background-color: $secondary-color;
+    color: $main-color;
+    text-align: center;
+}
+
+.order {
+    &__title {
+        @include content-title();
+    }
+
+    &__description {
+        @include content-description();
+        padding: 16px 0 24px;
+        max-width: 719px;
+        margin: 0 auto;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        background-color: $main-color;
+        color: $black-color;
+        gap: 16px;
+        max-width: 348px;
+        margin: 0 auto;
+        border-radius: 5px;
+
+        input,
+        select {
+            padding: 16px;
+            border: none;
+            font-size: 16px;
+            outline: none;
+            color: $black-color;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+        }
+
+        ::placeholder {
+            color: $black-color;
+        }
+        
+    }
+}
